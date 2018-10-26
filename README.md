@@ -1,3 +1,18 @@
+# Quickstart
+Clone the repo
++ `git clone https://github.com/ZackDeRose/angular-phaser-example dirname`
+
+Change to newly created directory
++ `cd dirname`
+
+Install node dependencies (https://nodejs.org/en/ to download nodejs)
++ `npm install`
+
+Serve the app
++ `ng serve`
+
+Should be running at localhost:4200
+
 # AngularPhaserExample
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.2.
