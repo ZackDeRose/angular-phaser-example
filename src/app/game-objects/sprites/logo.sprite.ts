@@ -17,7 +17,7 @@ export class LogoSprite extends Phaser.GameObjects.Sprite {
       LogoSprite.counts[textureName] = 1;
     }
     this.name = this.id;
-    this.setInteractive();
+    this.setInteractive({useHandCursor: true});
     this.on('pointerover', () => {
       const graphics = this.scene.add.graphics({
         lineStyle: {width: 1, color: 0xaa00aa},
