@@ -33,7 +33,8 @@ export class AppComponent implements OnInit {
         arcade: {gravity: {y: 500}}
       },
       scene: [ this.exampleScene ],
-      canvas: this.gameCanvasRef.nativeElement
+      parent: 'game'
+      // canvas: this.gameCanvasRef.nativeElement
     };
 
     this.game = new Phaser.Game(config);
