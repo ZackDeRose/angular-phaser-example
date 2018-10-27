@@ -15,8 +15,8 @@ export class ExampleScene extends Phaser.Scene {
   }
 
   preload = () => {
-    this.loadTexture('aoa-logo', '../../assets/AoA.png');
-    this.loadTexture('local-toast-logo', '../../assets/LocalToast.png');
+    this.loadTexture('aoa-logo', '../../assets/aoa-logo.png');
+    this.loadTexture('local-toast-logo', '../../assets/local-toast-logo.png');
     this.loadTexture('red-sparkly', '../../assets/red-sparkly.png');
   }
 
@@ -63,7 +63,7 @@ export class ExampleScene extends Phaser.Scene {
   addLogo(
     texture: string,
     location?: {x: number, y: number},
-    displaySize?: {width: number, height: number}
+    displaySize = {width: 150, height: 150}
   ): LogoSprite {
     const locationx = location ? location.x : Phaser.Math.RND.integerInRange(0, this.width);
     const locationy = location ? location.y : Phaser.Math.RND.integerInRange(0, this.height);
