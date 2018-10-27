@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+.modal-content app-logo-modal .modal-header {
+  background-color: #292b2c;
+  color: white;
+}
+
+.modal-content app-logo-modal .modal-body {
+  background-color: #292b2c;
+  color: white;
+}
+
+.modal-content app-logo-modal .modal-footer {
+  background-color: #292b2c;
+  color: white;
+}
+
+.dark-modal app-logo-modal .close {
+  color: white;
+}

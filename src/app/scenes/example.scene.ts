@@ -18,6 +18,7 @@ export class ExampleScene extends Phaser.Scene {
     this.loadTexture('aoa-logo', '../../assets/aoa-logo.png');
     this.loadTexture('local-toast-logo', '../../assets/local-toast-logo.png');
     this.loadTexture('red-sparkly', '../../assets/red-sparkly.png');
+    this.loadTexture('laser-background', '../../assets/laser-bkg-800-600.png');
   }
 
   private loadTexture = (name, imgSrc) => {

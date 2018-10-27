@@ -2,7 +2,7 @@ import { LogoSprite } from './game-objects/sprites/logo.sprite';
 import { ExampleScene } from './scenes/example.scene';
 import { Component, ViewChild, ElementRef, OnInit, HostListener } from '@angular/core';
 import * as Phaser from 'phaser';
-import { NgbModal } from '../../node_modules/@ng-bootstrap/ng-bootstrap';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { LogoModalComponent } from './components/logo-modal/logo-modal.component';
 
 @Component({
@@ -43,7 +43,7 @@ export class AppComponent implements OnInit {
 
     this.exampleScene.logoClicked.subscribe((logoSprite: LogoSprite) => {
       this.exampleScene.highlightedLogo = null;
-      const modalComponent = this.modalService.open(LogoModalComponent);
+      const modalComponent = this.modalService.open(LogoModalComponent, {windowClass: 'dark-modal'});
       modalComponent.componentInstance.logoSprite = logoSprite;
     });
   }
